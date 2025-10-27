@@ -1,0 +1,101 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNBOSfiNIr+TGEFwESvtagw",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/tejasai24-lab/Group_A213/blob/main/python%20basics\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "r1CjZiK7rJtt",
+        "outputId": "3e9ec3e9-4341-464f-c4d1-5126c5dc975e"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Welcome to the rollercoaster!\n",
+            "What is your height in cm? 150\n",
+            "You can ride the rollercoaster\n",
+            "what is your age? 24\n",
+            "Adult tickets are $12\n",
+            "Do you want to have a photo take? Type y for Yes and n for No.y\n",
+            "Your final bill is15 \n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"Welcome to the rollercoaster!\")\n",
+        "height = int(input(\"What is your height in cm? \"))\n",
+        "bill = 0\n",
+        "\n",
+        "if height>120:\n",
+        "\n",
+        "  print(\"You can ride the rollercoaster\")\n",
+        "  age= int(input(\"what is your age? \"))\n",
+        "  if age <= 12:\n",
+        "    bill = 5\n",
+        "    print(\"child tickets are $5.\")\n",
+        "  elif age <=18:\n",
+        "    bill = 7\n",
+        "    print(\"Youth tickets are $7\")\n",
+        "  else :\n",
+        "    bill = 12\n",
+        "    print(\"Adult tickets are $12\")\n",
+        "  wants_photo = input(\"Do you want to have a photo take? Type y for Yes and n for No.\")\n",
+        "  if wants_photo==\"y\":\n",
+        "    bill += 3\n",
+        "\n",
+        "  print(f\"Your final bill is{bill} \")\n",
+        "\n",
+        "else:\n",
+        "  print(\"Sorry you have to grow taller before you can ride.\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "HiJ21dQ6vLH1"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "2B67DpoLvGcw"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
